@@ -1,0 +1,135 @@
+html{
+	background-color: rgba(122, 80, 17, 0.363) ;
+}
+
+#warning{
+	position: absolute;
+	bottom: 10%;
+	left: 15%;
+	font-family: sans-serif;
+	font-size: 80%;
+}
+
+/* Text areas */
+#input {
+
+	border: none;
+	color: rgba(58, 28, 3, 0.74);
+	font-size: 250%;
+	font-weight: bold;
+	font-family: 'Quicksand', sans-serif;
+	margin: 7% 15%;
+	background-color: rgba(129, 22, 22, 0);
+	vertical-align: top;
+	width: 35%;
+	height: 70%;
+	outline: none;
+}
+  
+#input::placeholder {
+  color: rgba(66, 31, 3, 0.74);
+}
+
+  #output {
+	z-index: 4;
+	border: none;
+	color: rgb(122, 93, 55);
+	font-size: 20px;
+	width: 17%;
+	height: 80%;
+	position: absolute;
+	top: 40px;
+	right: 60px; 
+	outline: none;
+	background-color: rgba(0, 255, 255, 0);
+  }
+
+ /*Images*/
+
+.logoimg{
+	position: absolute;
+	top: 6%;
+	left: 3%;
+	filter: hue-rotate(190deg);
+	
+}
+
+.muñecoimg{
+	z-index: 2;
+	position:absolute;
+	top: 250px;
+	right: 3%;
+	filter: hue-rotate(190deg);
+	height: 32%;
+}
+
+.rectangle{
+	z-index: 1;
+	position: absolute;
+	right: 20px;
+	top: 30px;
+	height: 96.5%;
+	filter: brightness(92%);
+}
+
+.text{
+	z-index: 3;
+	position: absolute;
+	top: 600px;
+	right: 50px;
+	
+}
+
+/*Buttons*/
+
+#encriptar{
+	
+	position: absolute;
+	bottom: 40px;
+	left: 13%;
+	font-size: 16px;
+	font-family: 'Quicksand', sans-serif;
+	width: 18%;
+	padding: 1%;
+	border-radius: 21px;
+	border-color: rgb(0, 0, 0);
+	background-color: rgb(58, 36, 11);
+	color: rgba(255, 255, 255, 0.822);
+	cursor: pointer;
+}
+
+#desencriptar{
+
+	position: absolute;
+	bottom: 40px;
+	left: 32%;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Quicksand', sans-serif;
+	width: 18%;
+	padding: 1%;
+	border-radius: 21px;
+	border-color: rgba(78, 32, 14, 0.521);
+	background-color: rgba(129, 76, 16, 0.11);
+	color: rgba(104, 67, 12, 0.61);
+	cursor: pointer;
+}
+
+#copiar{
+
+	z-index: 5;
+	position: absolute;
+	bottom: 60px;
+	right: 5%;
+	font-size: 16px;
+	font-family: 'Quicksand', sans-serif;
+	width: 13%;
+	padding: 0.6%;
+	border-radius: 21px;
+	border-color: rgba(61, 39, 10, 0.87);
+	background-color: rgba(97, 60, 26, 0.733);
+	color: rgba(29, 20, 4, 0.959);
+	cursor: pointer;
+}
+
+
