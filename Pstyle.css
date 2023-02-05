@@ -1,7 +1,9 @@
+
 html{
 	background-color: rgba(122, 80, 17, 0.363) ;
 }
 
+/* Explains the character limitations of the program*/
 #warning{
 	position: absolute;
 	bottom: 10%;

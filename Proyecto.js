@@ -34,11 +34,11 @@ function encriptar (){
     var mensaje = inputMensaje.value;
 
     var mensajeEncriptado = mensaje
-    .replace(/e/g,"enter")
-    .replace(/i/g,"imes")
-    .replace(/o/g,"ober")
-    .replace(/a/g,"ai")
-    .replace(/u/g,"ufat");
+    .replaceAll("e" , "enter")
+    .replaceAll("i" , "imes")
+    .replaceAll("o" , "ober")
+    .replaceAll("a" , "ai") 
+    .replaceAll("u" , "ufat")
 
     inputResultado.value = mensajeEncriptado;
   }
@@ -55,12 +55,11 @@ function desencriptar (){
 
     var mensajeEncriptado = inputMensaje.value;
     var mensaje = mensajeEncriptado
-
-    .replace(/enter/g,"e")
-    .replace(/imes/g,"i")
-    .replace(/ober/g,"o")
-    .replace(/ai/g,"a")
-    .replace(/ufat/g,"u");
+    .replaceAll("enter" , "e")
+    .replaceAll("imes" , "i")
+    .replaceAll("ober" , "o")
+    .replaceAll("ai" , "a") 
+    .replaceAll("ufat" , "u")
 
     inputResultado.value = mensaje;
   }
@@ -80,3 +79,11 @@ function copiar (){
 btnEncriptar.onclick = encriptar;
 btnDesencriptar.onclick = desencriptar;
 btnCopiar.onclick = copiar;
+
+inputMensaje.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    encriptar();
+  }
+});
+
+
